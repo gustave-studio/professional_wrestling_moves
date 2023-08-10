@@ -10,13 +10,17 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 from pathlib import Path
-from .settings_local import *
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+
+try:
+    from .settings_local import *
+except ImportError:
+    pass
 
 if not DEBUG:
     SECRET_KEY = os.environ['SECRET_KEY']

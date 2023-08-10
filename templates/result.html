@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<div class="alert alert-info text-center" role="alert">
+    <h1>プロレス技診断</h1>
+</div>
+{% endblock header %}
+
+{% block content %}
+<main role="main" class="container">
+
+    <!-- <img src="/images/move.png" class="img-fluid" alt="トップ画像"> -->
+    <div class="jumbotron">
+        <div class="text-center">
+        あなたにピッタリのプロレス技は、
+
+        <h3>{{ name }}</h3>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <br>
+        <iframe width="300" height="315" src="{{ url }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  
+        <br>
+
+        </div>
+        <br>
+        <div class="mx-auto" style="width: 375px;">
+            
+        </div>
+    </div>
+</main>
+{% endblock content %}

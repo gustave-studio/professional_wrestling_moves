@@ -9,28 +9,38 @@
 {% block content %}
 <main role="main" class="container">
 
-    <img src="/images/test.png" class="img-fluid" alt="トップ画像">
-    <div class="jumbotron">
+    <img src="/images/move.png" class="img-fluid" alt="トップ画像">
+    <div class="card-body border">
         <div class="text-center">
-        <h1>プロレス技診断</h1>
         あなたに合ったプロレス技を診断！
         </div>
         <br>
         <div class="mx-auto" style="width: 375px;">
             <form method="POST" enctype="multipart/form-data">{% csrf_token %}
 
-                <p>問1. パワー系とテクニック系どちらが好き？<br>
-                    <input type="radio" name="q1" value="パワー"> パワー系
+                <p>問1.どんな技が好き？<br>
+                    <input type="radio" name="q1" value="打撃、投げ"> 打撃、投げ
                     <br>
-                    <input type="radio" name="q1" value="テクニック"> テクニック系
+                    <input type="radio" name="q1" value="空中、関節"> 空中、関節
+                    <br>
+                    <!-- <input type="radio" name="q1" value="どちらとも言えない"> どちらとも言えない -->
+                </p>
+
+                <p>問2.パワー系とテクニック系で選ぶなら？<br>
+                    <input type="radio" name="q2" value="パワー系"> パワー系
+                    <br>
+                    <input type="radio" name="q2" value="テクニック系"> テクニック系
+                    <br>
+                    <!-- <input type="radio" name="q1" value="どちらとも言えない"> どちらとも言えない -->
                 </p>
                 
-                <p>問2. あなたが大事にしたいのは？<br>
-                    <input type="radio" name="q2" value="スター性"> キラキラしたスター性
+                <p>問3.あなたが大事にしたいのは？<br>
+                    <input type="radio" name="q3" value="スター性"> スター性
                     <br>
-                    <input type="radio" name="q2" value="独自性"> 誰とも被らない独自性
+                    <input type="radio" name="q3" value="独自性"> 独自性
+                    <br>
+                    <!-- <input type="radio" name="q2" value="どちらとも言えない"> どちらとも言えない -->
                 </p>
-                
                 <p><input type="submit" value="診断する"></p>
             </form>
         </div>

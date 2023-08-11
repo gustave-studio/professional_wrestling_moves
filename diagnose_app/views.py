@@ -5,7 +5,7 @@ MOVES = { (0, 0, 0): { 'name' : 'レインメーカー', 'url' : 'https://www.yo
           (0, 1, 0): { 'name' : 'ストームブレイカー', 'url' : 'https://www.youtube.com/embed/7B7yNCdrx0E' },
           (0, 1, 1): { 'name' : 'デスティーノ', 'url' : 'https://www.youtube.com/embed/kO_fKzX-00o' },
           (1, 0, 0): { 'name' : 'ハイフライフロー', 'url' : 'https://www.youtube.com/embed/_sXN7Ft8Hvg' },
-          (1, 0, 1): { 'name' : 'アルティマウェポン', 'url' : 'https://www.youtube.com/embed/YWBi0BFL9Ag' },
+          (1, 0, 1): { 'name' : 'アルティマウエポン', 'url' : 'https://www.youtube.com/embed/YWBi0BFL9Ag' },
           (1, 1, 0): { 'name' : 'ジャベ・インモルタル', 'url' : 'https://www.youtube.com/embed/XmuPDccVUCo' },
           (1, 1, 1): { 'name' : 'ヌメロ・ドス', 'url' : 'https://www.youtube.com/embed/P594OnCK2P8' },
 }

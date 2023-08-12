@@ -20,7 +20,6 @@ def topfunc(request):
         print(answers(request))
         print(str(answers(request)))
         print(MOVES[answers(request)])
-        
 
         return redirect('/result?answers=' + str(answers(request)))
 
